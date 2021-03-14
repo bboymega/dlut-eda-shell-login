@@ -3,6 +3,8 @@ DLUT-EDA Shell Login. Applicable to headless devices.
 
 DLUT_EDA 的shell命令行客户端，适合树莓派/OPENWRT等嵌入式设备，也可以在电脑上使用简化登录过程。
 
+![ScreenShot.png](/ScreenShot.png)
+
 # Usage 使用方法: 
 /PATH_TO_THE_SCRIPT/dlut_eda_login.sh [-u username] [-p password] [-o]
 
