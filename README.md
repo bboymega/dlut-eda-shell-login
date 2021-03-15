@@ -5,6 +5,8 @@ DLUT_EDA 的shell命令行客户端，适合树莓派/OPENWRT等嵌入式设备�
 
 ![ScreenShot.png](/ScreenShot.png)
 
+![Screenshot_20210315-140314_Settings.jpg](/Screenshot_20210315-140314_Settings.jpg)
+
 # Usage 使用方法: 
 /PATH_TO_THE_SCRIPT/dlut_eda_login.sh [-u username] [-p password] [-o]
 
