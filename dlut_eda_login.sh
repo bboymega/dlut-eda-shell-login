@@ -1,5 +1,4 @@
 #!/bin/bash
-networksetup -setairportnetwork en0 DLUT-EDA
 logout=2
 while getopts u:p:o flag
 do
