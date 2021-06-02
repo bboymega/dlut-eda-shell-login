@@ -28,7 +28,7 @@ DLUT_EDA 的shell命令行客户端，适合树莓派/OPENWRT等嵌入式设备�
 
 ### 自动化运行方案
 
-![automator](/automator.jpg)
+![automator](/auto_mator.png)
 
 1. 打开 Automator，新建文档并选择 Quick Action（用于添加系统快捷键，快捷更换网络）
 2. 左侧搜索 Run AppleScript，将脚本内容替换为 [`switch.scpt`](https://github.com/Augists/dlut-eda-shell-login/blob/main/switch.scpt) 脚本中的内容，编译检查
