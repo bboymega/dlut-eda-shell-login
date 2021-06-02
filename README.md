@@ -7,22 +7,18 @@ DLUT_EDA 的shell命令行客户端，适合树莓派/OPENWRT等嵌入式设备�
 
 ![Screenshot_20210315-140314_Settings.jpg](/Screenshot_20210315-140314_Settings.jpg)
 
-## Shell 脚本 Usage 使用方法: 
+## Shell Usage 脚本使用方法: 
 /PATH_TO_THE_SCRIPT/dlut_eda_login.sh [-u username] [-p password] [-o]
 
 登录方法：/PATH_TO_THE_SCRIPT/dlut_eda_login.sh -u "用户名" -p "密码"
 
 登出方法：/PATH_TO_THE_SCRIPT/dlut_eda_login.sh -o
 
-## apple script 自动登录 DLUT-EDA 网络并运行脚本 beta version
+## AppleScript 自动登录 DLUT-EDA 网络并运行脚本
+
+> beta version 0.3
 
 通过 switch 脚本可以一键完成切换 DLUT-EDA 网络及登录校园网功能
-
-目前仅为测试版，脚本仍在开发
-
-### 使用要求
-
-macOS 系统，有 Script Editor（系统自带）
 
 ### 使用方法
 
@@ -30,6 +26,13 @@ macOS 系统，有 Script Editor（系统自带）
 2. 将 script 脚本中的 user_name 和 pass_word 修改为自己的登录信息
 3. 编译并运行脚本
 
-可以将脚本添加入自动化，可以通过系统级快捷键运行脚本
+### 自动化运行方案
+
+![automator](/auto_mator.png)
+
+1. 打开 Automator，新建文档并选择 Quick Action（用于添加系统快捷键，快捷更换网络）
+2. 左侧搜索 Run AppleScript，将脚本内容替换为 [`switch.scpt`](https://github.com/Augists/dlut-eda-shell-login/blob/main/switch.scpt) 脚本中的内容，编译检查
+3. 保存退出，Automator 会自动保存在 `~/Library/Services` 路径下
+4. 打开系统偏好设置 System Preference，在键盘中选择 Shortcut，脚本快捷键可以在 Services 中自定义
 
 **本脚本不会保存任何密码，请放心使用。请遵守法律法规，不要滥用脚本，否则后果自负！！！**
