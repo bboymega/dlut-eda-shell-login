@@ -16,7 +16,7 @@ auth()
 
     echo "Checking Internet connection..."
     stat_code=0
-    stat_code=$(curl -s -w %{http_code} --connect-timeout 5 "https://www.google.cn/generate_204")
+    stat_code=$(curl -s -w %{http_code} --connect-timeout 5 "https://connectivitycheck.gstatic.com/generate_204")
     if [ "${stat_code}" -eq "204" ]; then echo "Internet connected."
         else echo "Failed to connect to the Internet. Please check the username and password and try again."
     fi
