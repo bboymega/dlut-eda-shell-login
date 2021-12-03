@@ -16,7 +16,7 @@ DLUT_EDA 的shell命令行客户端，适合树莓派/OPENWRT等嵌入式设备�
 
 ## 自动检测网络连接并实现断线重连
 
-将 check_internet.sh 和 dlut-eda-shell-login.sh 放在同一目录下
+将 check_internet.sh 和 dlut_eda_login.sh 放在同一目录下
 
 crontab 添加定时任务
 
