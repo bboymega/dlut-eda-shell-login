@@ -15,9 +15,13 @@ DLUT_EDA 的shell命令行客户端，适合树莓派/OPENWRT等嵌入式设备�
 登出方法：/PATH_TO_THE_SCRIPT/dlut_eda_login.sh -o
 
 ## 自动检测网络连接并实现断线重连
+
 将 check_internet.sh 和 dlut-eda-shell-login.sh 放在同一目录下
+
 crontab 添加定时任务
+
 `*/1 * * * * bash /etc/check_internet.sh`
+
 就可以实现断线重连（每一分钟检测一次）。
 
 ## AppleScript 自动切换至 DLUT-EDA 并登录
