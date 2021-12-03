@@ -18,6 +18,8 @@ DLUT_EDA 的shell命令行客户端，适合树莓派/OPENWRT等嵌入式设备�
 
 将 check_internet.sh 和 dlut_eda_login.sh 放在同一目录下
 
+填写好 check_internet.sh 中的 -u 和 -p 参数
+
 crontab 添加定时任务
 
 `*/1 * * * * bash /etc/check_internet.sh`
